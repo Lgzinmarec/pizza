@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pizzas da Miri</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script>
+
+        function openTab(tabName) {
+
+            var tabContents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].style.display = "none";
+            }
+
+            var tabs = document.getElementsByClassName("tab");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].className = tabs[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tabName).style.display = "block"
+            event.currentTarget.className += " active";
+        }
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="logo.png.jpeg" alt="Logo Pizza Delivery">
+    </header>
+
+
+    </header>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab active" onclick="openTab('home')">Página Inicial</div>
+            <div class="tab" onclick="openTab('contact')">Contato</div>
+            <div class="tab" onclick="openTab('menu')">Cardápio</div>
+            
+
+        </div>
+        <div id="home" class="tab-content">
+            <h2>Bem-vindo à Pizza´s da Miri</h2>
+
+            <div class="owl-carousel" width="200" height="200">
+                <div class="item">
+                    <img src="banner.png.jpeg" alt="Imagem 1">
+                </div>
+                <div class="item">
+                    <img src="banner.png.jpeg" alt="Imagem 2">
+                </div>
+                <div class="item">
+                    <img src="banner.png.jpeg">
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="tab-content">
+            <h2>Contato</h2>
+            <div class="contact-info">
+                <div>
+                    <p>Telefone: (61)992780507</p>
+                    <p>Email: miri.carvalho@gmail.com</p>
+                </div>
+                <div>
+                    <p>Horário de funcionamento:</p>
+                    <p>Seg-Sex: 10h às 22h</p>
+                    <p>Sáb-Dom: 11h às 23h</p>
+                </div>
+            </div>
+        </div>
+        <div id="menu" class="tab-content">
+            <h2>Opções</h2>
+            <div class="pizza-card">
+                <div class="pizza-image">
+                    <img src="pizza_marguerita_classica_22-cm_mattarello_pizzas_riomar_kennedy.png"
+                        alt="Pizza Margherita" width="200" height="200">
+                </div>
+                <div class="pizza-details">
+                    <h3>Pizza Marguerita</h3>
+                    <p>Tomate, mossarela, oregano e ervas basil</p>
+                    <p class="pizza-price">$10.99</p>
+
+                </div>
+            </div>
+            <div class="pizza-card">
+                <div class="pizza-image">
+                    <img src="pepperoni-pizza.jpg" alt="Pepperoni Pizza" width="200" height="200">
+                </div>
+                <div class="pizza-details">
+                    <h3>Pepperoni Pizza</h3>
+                    <p>Oregano, Tomate, mossarela,cebola e pepperoni</p>
+                    <p class="pizza-price">$12.99</p>
+
+                </div>
+            </div>
+            <div class="pizza-card">
+                <div class="pizza-image">
+                    <img src="Pizza-De-Calabresa.jpg" alt="Pepperoni Pizza" width="200" height="200">
+                </div>
+                <div class="pizza-details">
+                    <h3>Calabresa Pizza</h3>
+                    <p>Tomate, Oregano, Cebola e Calabresa</p>
+                    <p class="pizza-price">$12.99</p>
+
+                </div>
+            </div>
+            <div class="pizza-card">
+                <div class="pizza-image">
+                    <img src="frango.png" alt="Pepperoni Pizza" width="200" height="200">
+                </div>
+                <div class="pizza-details">
+                    <h3>Frango Pizza</h3>
+                    <p>frango, catupiry, milho e oregano</p>
+                    <p class="pizza-price">$12.99</p>
+
+                </div>
+            </div>
+            <div class="pizza-card">
+                <div class="pizza-image">
+                    <img src="Pizza-Portuguesa-scaled.jpg" alt="Pepperoni Pizza" width="200" height="200">
+                </div>
+                <div class="pizza-details">
+                    <h3>Portuguesa Pizza</h3>
+                    <p>Tomate, ovo, presunto, queijo, azeitona, pimentao e cebola</p>
+                    <p class="pizza-price">$12.99</p>
+
+                </div>
+            </div>
+            <div id="location" class="tab-content"></div>
+
+
+
+            <h2>História</h2>
+            <div class="location">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.8343672820924!2d-48.0872961255621!3d-15.812685273404288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bcccbe5f693bf%3A0xea3e0a806b97fbdf!2sSt.%20J%20Norte%20QNJ%2012%20-%20Taguatinga%2C%20Bras%C3%ADlia%20-%20DF!5e0!3m2!1spt-BR!2sbr!4v1687524057077!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+
+
+
+
+        <footer>
+            <p>&copy; Bateu a fome? Experimente nossas deliciosas pizzas!!</p>
+        </footer>
+
+
+        <script>
+            $(document).ready(function () {
+                $(".owl-carousel").owlCarousel({
+                    items: 1,
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    autoplayHoverPause: true,
+                    nav: false,
+                    dots: true
+                });
+            });
+        </script>
+
+</body>
+
+</html>
